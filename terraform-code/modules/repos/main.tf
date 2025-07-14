@@ -23,8 +23,8 @@ module "deploy-key" {
   repo_name = each.key
 }
 
-/* module "info-page" {
-  source           = "./modules/info-page"
+// module "info-page" {
+ /* source           = "./modules/info-page"
   repos            = { for k, v in module.repos["prod"].clone-urls : k => v }
   run_provisioners = false
 } */
