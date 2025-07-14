@@ -19,6 +19,7 @@ terraform {
     organization = "testing-2121235"
     workspaces {
       name = "tf-repos"
+      
     }
   }
 }
