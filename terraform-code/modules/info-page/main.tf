@@ -1,3 +1,18 @@
+data "terraform_remote_state" "repos" {
+  backend = "remote"
+  config = {
+    organization = "testing-2121235"
+    workspaces = {
+      name = "tf-repos"
+    }
+  }
+
+}
+
+locals {
+  repos = { for k, v in data.data.terraform_remote_state.repos["prod"].clone-urls : k => v]}
+}
+
 resource "github_repository" "this" {
   name        = "tf_info_page"
   description = "Repository info"
@@ -28,7 +43,8 @@ resource "github_repository_file" "this" {
       avatar = data.github_user.current.avatar_url
       name   = data.github_user.current.name
       date   = time_static.this.year
-      repos  = var.repos
+      //repos  = var.repos
+      repos = local.repos
   })
 
 

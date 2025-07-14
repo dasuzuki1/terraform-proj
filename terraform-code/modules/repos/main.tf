@@ -11,7 +11,7 @@ module "repos" {
   /* repos = ["dev", "prod"] */
   //repos            = local.repos
   //repos = jsondecode(file("repos.json"))
-  repos = {for v in csvdecode(file("repos.csv")) : v["environment"] => {for x,y in v : x => lower(y)}}
+  repos            = { for v in csvdecode(file("repos.csv")) : v["environment"] => { for x, y in v : x => lower(y) } }
   env              = each.key
   run_provisioners = false
 
@@ -24,7 +24,7 @@ module "deploy-key" {
 }
 
 // module "info-page" {
- /* source           = "./modules/info-page"
+/* source           = "./modules/info-page"
   repos            = { for k, v in module.repos["prod"].clone-urls : k => v }
   run_provisioners = false
 } */
