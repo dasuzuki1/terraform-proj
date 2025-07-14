@@ -1,0 +1,1023 @@
+{
+  "version": 4,
+  "terraform_version": "1.12.2",
+  "serial": 3,
+  "lineage": "0c1191ce-efd6-30f6-207c-a851b9142489",
+  "outputs": {
+    "repo-info": {
+      "value": {
+        "dev": {
+          "tf-infra-dev": {
+            "http_clone_url": "https://github.com/dasuzuki1/tf-infra-dev.git",
+            "pages_url": "no page",
+            "ssh_clone_url": "git@github.com:dasuzuki1/tf-infra-dev.git"
+          }
+        },
+        "prod": {
+          "tf-infra-prod": {
+            "http_clone_url": "https://github.com/dasuzuki1/tf-infra-prod.git",
+            "pages_url": "no page",
+            "ssh_clone_url": "git@github.com:dasuzuki1/tf-infra-prod.git"
+          }
+        }
+      },
+      "type": [
+        "object",
+        {
+          "dev": [
+            "object",
+            {
+              "tf-infra-dev": [
+                "object",
+                {
+                  "http_clone_url": "string",
+                  "pages_url": "string",
+                  "ssh_clone_url": "string"
+                }
+              ]
+            }
+          ],
+          "prod": [
+            "object",
+            {
+              "tf-infra-prod": [
+                "object",
+                {
+                  "http_clone_url": "string",
+                  "pages_url": "string",
+                  "ssh_clone_url": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "repo-list": {
+      "value": [
+        "tf-infra-dev"
+      ],
+      "type": [
+        "tuple",
+        [
+          "string"
+        ]
+      ]
+    }
+  },
+  "resources": [
+    {
+      "module": "module.info-page",
+      "mode": "data",
+      "type": "github_user",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/53331046?v=4",
+            "bio": "",
+            "blog": "",
+            "company": "",
+            "created_at": "2019-07-26 06:54:24 +0000 UTC",
+            "email": "",
+            "followers": 2,
+            "following": 2,
+            "gpg_keys": [],
+            "gravatar_id": "",
+            "id": "53331046",
+            "location": "Waterloo, Ontario",
+            "login": "dasuzuki1",
+            "name": "Daniel Suzuki",
+            "node_id": "MDQ6VXNlcjUzMzMxMDQ2",
+            "public_gists": 0,
+            "public_repos": 9,
+            "site_admin": false,
+            "ssh_keys": [
+              "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINgVG3TIfpx+kazY9ZQIKoHXnqNuZTHYFxf1p/20NZVm"
+            ],
+            "suspended_at": "0001-01-01 00:00:00 +0000 UTC",
+            "updated_at": "2025-07-06 18:29:38 +0000 UTC",
+            "username": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.info-page",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "this",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": false,
+            "allow_merge_commit": true,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": null,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "Repository info",
+            "etag": "W/\"3a92c6995c2d8b7cbee592433d4220127c7b02468b22f4c6ca527c38d49548ae\"",
+            "full_name": "dasuzuki1/tf_info_page",
+            "git_clone_url": "git://github.com/dasuzuki1/tf_info_page.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/dasuzuki1/tf_info_page",
+            "http_clone_url": "https://github.com/dasuzuki1/tf_info_page.git",
+            "id": "tf_info_page",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": null,
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "tf_info_page",
+            "node_id": "R_kgDOPMUX2w",
+            "pages": [],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 1019549659,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:dasuzuki1/tf_info_page.git",
+            "svn_url": "https://github.com/dasuzuki1/tf_info_page",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": false,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.info-page",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "this",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add index.tftpl",
+            "commit_sha": "720973b3c3c56377ab1d58c1529cf5b7db63a466",
+            "content": "# Portfolio\n\n##About Me\n\n<img src=\"https://avatars.githubusercontent.com/u/53331046?v=4\" style=\"width: 10%; height: auto;\">\n\n\n\ntf-infra-prod\n\n\n## Projects\n\n| Repository | Webpage | GitHub |\n|------------|---------|--------|\n\n---\n\nDaniel Suzuki 2025 \n",
+            "file": "index.tftpl",
+            "id": "tf_info_page/index.tftpl",
+            "overwrite_on_create": true,
+            "ref": "main",
+            "repository": "tf_info_page",
+            "sha": "bb03560b3742f8455e36f09411e6fe7bd87cc000"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.info-page.data.github_user.current",
+            "module.info-page.github_repository.this",
+            "module.info-page.time_static.this",
+            "module.repos.github_repository.tf_repo"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.info-page",
+      "mode": "managed",
+      "type": "time_static",
+      "name": "this",
+      "provider": "provider[\"registry.terraform.io/hashicorp/time\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "day": 14,
+            "hour": 13,
+            "id": "2025-07-14T13:53:43Z",
+            "minute": 53,
+            "month": 7,
+            "rfc3339": "2025-07-14T13:53:43Z",
+            "second": 43,
+            "triggers": null,
+            "unix": 1752501223,
+            "year": 2025
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"dev\"]",
+      "mode": "data",
+      "type": "github_user",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/53331046?v=4",
+            "bio": "",
+            "blog": "",
+            "company": "",
+            "created_at": "2019-07-26 06:54:24 +0000 UTC",
+            "email": "",
+            "followers": 2,
+            "following": 2,
+            "gpg_keys": [],
+            "gravatar_id": "",
+            "id": "53331046",
+            "location": "Waterloo, Ontario",
+            "login": "dasuzuki1",
+            "name": "Daniel Suzuki",
+            "node_id": "MDQ6VXNlcjUzMzMxMDQ2",
+            "public_gists": 0,
+            "public_repos": 9,
+            "site_admin": false,
+            "ssh_keys": [
+              "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINgVG3TIfpx+kazY9ZQIKoHXnqNuZTHYFxf1p/20NZVm"
+            ],
+            "suspended_at": "0001-01-01 00:00:00 +0000 UTC",
+            "updated_at": "2025-07-06 18:29:38 +0000 UTC",
+            "username": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"dev\"]",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "tf_repo",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": false,
+            "allow_merge_commit": true,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": null,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "terraform Code for MTC",
+            "etag": "W/\"f416d801311cb11c2e355900dea9c25d81ff125312c412251dfda25c3ba22486\"",
+            "full_name": "dasuzuki1/tf-infra-dev",
+            "git_clone_url": "git://github.com/dasuzuki1/tf-infra-dev.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/dasuzuki1/tf-infra-dev",
+            "http_clone_url": "https://github.com/dasuzuki1/tf-infra-dev.git",
+            "id": "tf-infra-dev",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": null,
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "tf-infra-dev",
+            "node_id": "R_kgDOPMUX8g",
+            "pages": [],
+            "primary_language": "",
+            "private": true,
+            "repo_id": 1019549682,
+            "security_and_analysis": [],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:dasuzuki1/tf-infra-dev.git",
+            "svn_url": "https://github.com/dasuzuki1/tf-infra-dev",
+            "template": [],
+            "topics": [],
+            "visibility": "private",
+            "vulnerability_alerts": false,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"dev\"]",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": null,
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add main.tf",
+            "commit_sha": "affd669d456d5f33159e3b675d918935b73b79a9",
+            "content": "//Hello terraform!",
+            "file": "main.tf",
+            "id": "tf-infra-dev/main.tf",
+            "overwrite_on_create": true,
+            "ref": "main",
+            "repository": "tf-infra-dev",
+            "sha": "7a1dee536904f464e74d51b11c36055729ce3b64"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.repos.github_repository.tf_repo"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"dev\"]",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "readme",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add README.md",
+            "commit_sha": "40599436d0df979e9a0ba9938df611d7bbd62513",
+            "content": " # This is a  dev terraform repo is for infra devs. \nThe infra was last modified by Daniel Suzuki",
+            "file": "README.md",
+            "id": "tf-infra-dev/README.md",
+            "overwrite_on_create": true,
+            "ref": "main",
+            "repository": "tf-infra-dev",
+            "sha": "8a6acf7ae3266aba8935deabea9d9b4c1a68844d"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.repos.data.github_user.current",
+            "module.repos.github_repository.tf_repo"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"dev\"]",
+      "mode": "managed",
+      "type": "random_id",
+      "name": "random",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "Uaw=",
+            "b64_url": "Uaw",
+            "byte_length": 2,
+            "dec": "20908",
+            "hex": "51ac",
+            "id": "Uaw",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "I+E=",
+            "b64_url": "I-E",
+            "byte_length": 2,
+            "dec": "9185",
+            "hex": "23e1",
+            "id": "I-E",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "V70=",
+            "b64_url": "V70",
+            "byte_length": 2,
+            "dec": "22461",
+            "hex": "57bd",
+            "id": "V70",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "qqI=",
+            "b64_url": "qqI",
+            "byte_length": 2,
+            "dec": "43682",
+            "hex": "aaa2",
+            "id": "qqI",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 4,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "VsI=",
+            "b64_url": "VsI",
+            "byte_length": 2,
+            "dec": "22210",
+            "hex": "56c2",
+            "id": "VsI",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 5,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "hag=",
+            "b64_url": "hag",
+            "byte_length": 2,
+            "dec": "34216",
+            "hex": "85a8",
+            "id": "hag",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 6,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "7TE=",
+            "b64_url": "7TE",
+            "byte_length": 2,
+            "dec": "60721",
+            "hex": "ed31",
+            "id": "7TE",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 7,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "FNI=",
+            "b64_url": "FNI",
+            "byte_length": 2,
+            "dec": "5330",
+            "hex": "14d2",
+            "id": "FNI",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 8,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "jdw=",
+            "b64_url": "jdw",
+            "byte_length": 2,
+            "dec": "36316",
+            "hex": "8ddc",
+            "id": "jdw",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"dev\"]",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "repo-clone",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 0,
+          "attributes": {
+            "id": "b64581fb-e16f-143f-2a2f-615c068ad2b2",
+            "input": null,
+            "output": null,
+            "triggers_replace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.repos.data.github_user.current",
+            "module.repos.github_repository.tf_repo",
+            "module.repos.github_repository_file.main",
+            "module.repos.github_repository_file.readme"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"prod\"]",
+      "mode": "data",
+      "type": "github_user",
+      "name": "current",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "schema_version": 0,
+          "attributes": {
+            "avatar_url": "https://avatars.githubusercontent.com/u/53331046?v=4",
+            "bio": "",
+            "blog": "",
+            "company": "",
+            "created_at": "2019-07-26 06:54:24 +0000 UTC",
+            "email": "",
+            "followers": 2,
+            "following": 2,
+            "gpg_keys": [],
+            "gravatar_id": "",
+            "id": "53331046",
+            "location": "Waterloo, Ontario",
+            "login": "dasuzuki1",
+            "name": "Daniel Suzuki",
+            "node_id": "MDQ6VXNlcjUzMzMxMDQ2",
+            "public_gists": 0,
+            "public_repos": 9,
+            "site_admin": false,
+            "ssh_keys": [
+              "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINgVG3TIfpx+kazY9ZQIKoHXnqNuZTHYFxf1p/20NZVm"
+            ],
+            "suspended_at": "0001-01-01 00:00:00 +0000 UTC",
+            "updated_at": "2025-07-06 18:29:38 +0000 UTC",
+            "username": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"prod\"]",
+      "mode": "managed",
+      "type": "github_repository",
+      "name": "tf_repo",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 1,
+          "attributes": {
+            "allow_auto_merge": false,
+            "allow_merge_commit": true,
+            "allow_rebase_merge": true,
+            "allow_squash_merge": true,
+            "allow_update_branch": false,
+            "archive_on_destroy": null,
+            "archived": false,
+            "auto_init": true,
+            "default_branch": "main",
+            "delete_branch_on_merge": false,
+            "description": "terraform Code for MTC",
+            "etag": "W/\"a192b81462cf21740cddc56fcb6c5e049eea2f5290077aa24b27dabe52cf7643\"",
+            "full_name": "dasuzuki1/tf-infra-prod",
+            "git_clone_url": "git://github.com/dasuzuki1/tf-infra-prod.git",
+            "gitignore_template": null,
+            "has_discussions": false,
+            "has_downloads": false,
+            "has_issues": false,
+            "has_projects": false,
+            "has_wiki": false,
+            "homepage_url": "",
+            "html_url": "https://github.com/dasuzuki1/tf-infra-prod",
+            "http_clone_url": "https://github.com/dasuzuki1/tf-infra-prod.git",
+            "id": "tf-infra-prod",
+            "ignore_vulnerability_alerts_during_read": null,
+            "is_template": false,
+            "license_template": null,
+            "merge_commit_message": "PR_TITLE",
+            "merge_commit_title": "MERGE_MESSAGE",
+            "name": "tf-infra-prod",
+            "node_id": "R_kgDOPMUXyQ",
+            "pages": [],
+            "primary_language": "",
+            "private": false,
+            "repo_id": 1019549641,
+            "security_and_analysis": [
+              {
+                "advanced_security": [],
+                "secret_scanning": [
+                  {
+                    "status": "enabled"
+                  }
+                ],
+                "secret_scanning_push_protection": [
+                  {
+                    "status": "enabled"
+                  }
+                ]
+              }
+            ],
+            "squash_merge_commit_message": "COMMIT_MESSAGES",
+            "squash_merge_commit_title": "COMMIT_OR_PR_TITLE",
+            "ssh_clone_url": "git@github.com:dasuzuki1/tf-infra-prod.git",
+            "svn_url": "https://github.com/dasuzuki1/tf-infra-prod",
+            "template": [],
+            "topics": [],
+            "visibility": "public",
+            "vulnerability_alerts": false,
+            "web_commit_signoff_required": false
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "eyJzY2hlbWFfdmVyc2lvbiI6IjEifQ=="
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"prod\"]",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "main",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": null,
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add main.tf",
+            "commit_sha": "777d7de70ca6b5aeb97ad6922fa9a3de0d2b8571",
+            "content": "//Hello terraform!",
+            "file": "main.tf",
+            "id": "tf-infra-prod/main.tf",
+            "overwrite_on_create": true,
+            "ref": "main",
+            "repository": "tf-infra-prod",
+            "sha": "7a1dee536904f464e74d51b11c36055729ce3b64"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.repos.github_repository.tf_repo"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"prod\"]",
+      "mode": "managed",
+      "type": "github_repository_file",
+      "name": "readme",
+      "provider": "provider[\"registry.terraform.io/integrations/github\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 0,
+          "attributes": {
+            "autocreate_branch": null,
+            "autocreate_branch_source_branch": null,
+            "autocreate_branch_source_sha": null,
+            "branch": "main",
+            "commit_author": null,
+            "commit_email": null,
+            "commit_message": "Add README.md",
+            "commit_sha": "067568e709d271ce24a6fef28aac3d78cfbe31e0",
+            "content": " # This is a  prod terraform repo is for infra devs. \nThe infra was last modified by Daniel Suzuki",
+            "file": "README.md",
+            "id": "tf-infra-prod/README.md",
+            "overwrite_on_create": true,
+            "ref": "main",
+            "repository": "tf-infra-prod",
+            "sha": "bddc99b734cd25e71ab0e5843ebba287fa566ccd"
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "private": "bnVsbA==",
+          "dependencies": [
+            "module.repos.data.github_user.current",
+            "module.repos.github_repository.tf_repo"
+          ]
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"prod\"]",
+      "mode": "managed",
+      "type": "random_id",
+      "name": "random",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "V0M=",
+            "b64_url": "V0M",
+            "byte_length": 2,
+            "dec": "22339",
+            "hex": "5743",
+            "id": "V0M",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "u4E=",
+            "b64_url": "u4E",
+            "byte_length": 2,
+            "dec": "48001",
+            "hex": "bb81",
+            "id": "u4E",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "z1o=",
+            "b64_url": "z1o",
+            "byte_length": 2,
+            "dec": "53082",
+            "hex": "cf5a",
+            "id": "z1o",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "1as=",
+            "b64_url": "1as",
+            "byte_length": 2,
+            "dec": "54699",
+            "hex": "d5ab",
+            "id": "1as",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 4,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "SQU=",
+            "b64_url": "SQU",
+            "byte_length": 2,
+            "dec": "18693",
+            "hex": "4905",
+            "id": "SQU",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 5,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "790=",
+            "b64_url": "790",
+            "byte_length": 2,
+            "dec": "61405",
+            "hex": "efdd",
+            "id": "790",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 6,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "Nwc=",
+            "b64_url": "Nwc",
+            "byte_length": 2,
+            "dec": "14087",
+            "hex": "3707",
+            "id": "Nwc",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 7,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "paY=",
+            "b64_url": "paY",
+            "byte_length": 2,
+            "dec": "42406",
+            "hex": "a5a6",
+            "id": "paY",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        },
+        {
+          "index_key": 8,
+          "schema_version": 0,
+          "attributes": {
+            "b64_std": "KY0=",
+            "b64_url": "KY0",
+            "byte_length": 2,
+            "dec": "10637",
+            "hex": "298d",
+            "id": "KY0",
+            "keepers": null,
+            "prefix": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0
+        }
+      ]
+    },
+    {
+      "module": "module.repos[\"prod\"]",
+      "mode": "managed",
+      "type": "terraform_data",
+      "name": "repo-clone",
+      "provider": "provider[\"terraform.io/builtin/terraform\"]",
+      "instances": [
+        {
+          "index_key": "infra",
+          "schema_version": 0,
+          "attributes": {
+            "id": "2d2fe2c1-44ac-7064-96d1-e8c44c00c36b",
+            "input": null,
+            "output": null,
+            "triggers_replace": null
+          },
+          "sensitive_attributes": [],
+          "identity_schema_version": 0,
+          "dependencies": [
+            "module.repos.data.github_user.current",
+            "module.repos.github_repository.tf_repo",
+            "module.repos.github_repository_file.main",
+            "module.repos.github_repository_file.readme"
+          ]
+        }
+      ]
+    }
+  ],
+  "check_results": [
+    {
+      "object_kind": "var",
+      "config_addr": "module.repos.var.repos",
+      "status": "pass",
+      "objects": [
+        {
+          "object_addr": "module.repos[\"dev\"].var.repos",
+          "status": "pass"
+        },
+        {
+          "object_addr": "module.repos[\"prod\"].var.repos",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "object_kind": "var",
+      "config_addr": "module.repos.var.repo_max",
+      "status": "pass",
+      "objects": [
+        {
+          "object_addr": "module.repos[\"dev\"].var.repo_max",
+          "status": "pass"
+        },
+        {
+          "object_addr": "module.repos[\"prod\"].var.repo_max",
+          "status": "pass"
+        }
+      ]
+    },
+    {
+      "object_kind": "var",
+      "config_addr": "module.repos.var.env",
+      "status": "pass",
+      "objects": [
+        {
+          "object_addr": "module.repos[\"dev\"].var.env",
+          "status": "pass"
+        },
+        {
+          "object_addr": "module.repos[\"prod\"].var.env",
+          "status": "pass"
+        }
+      ]
+    }
+  ]
+}
